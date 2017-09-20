@@ -11,9 +11,16 @@
         <div id="overlay"></div>
 
         <nav id="nav" class="nav-right" role="navigation">
-        <!-- first navigation - change to being loaded from the menu -->
-        <?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
             <ul class="row">
+							<!--custom logo -->
+							<li>
+							<?php the_custom_logo(); ?>
+						  </li>
+							<li>
+							<!-- first navigation - change to being loaded from the menu -->
+							<?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
+						  </li>
+
                 <li class="color-codes">
         <a property="url" class="" href="#">				<span class="hide-md">
         <svg version="1.1" id="htmlcolorcodes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
@@ -39,7 +46,7 @@
           <div class="donut deg45-4-gray"></div>
           <div class="donut deg45-4"></div>
         </div>
-                        <h3 property="name" class="hide-md">Home</h3>
+            <h3 property="name" class="hide-md">Home</h3>
         </a>		</li>
                 <li class="color-picker">
                     <h3 property="name">
@@ -48,53 +55,6 @@
         </span>
                             Picker
         </a>			</h3>
-                </li>
-                <li class="color-chart">
-                    <h3 property="name">
-        <a property="url" class="" href="#">
-            	<span class="black hide-md">
-
-        </span>
-                            Chart
-        </a>			</h3>
-                </li>
-                <li class="color-names">
-                    <h3 property="name">
-        <a property="url" class="" href="#">
-
-                            Names
-        </a>			</h3>
-                </li>
-                <li class="color-tutorials">
-                    <h3 property="name">
-        <a property="url" class="" href="#">
-                            Tutorials
-        </a>			</h3>
-                </li>
-                <li class="color-resources">
-                    <h3 property="name">
-        <a property="url" class="" href="#">
-
-                            Resources
-        </a>			</h3>
-                </li>
-                <li class="credit">
-                    <h3 property="name">
-                        by <a href="#">Dixon &amp; Moe</a>
-                    </h3>
-                </li>
-                <li class="color-border hide-md">
-                    <span class="purple"></span>
-                    <span class="magenta"></span>
-                    <span class="red"></span>
-                    <span class="orange"></span>
-                </li>
-
-                <li class="hide-md credits">
-                    <h5>
-                            © 2015 – 2017
-                    </h5>
-                    <h3><a href="#">Dixon &amp; Moe</a></h3>
                 </li>
             </ul>
 
