@@ -574,7 +574,7 @@ strong {
 
 #main>article {
     position: relative;
-    width: calc(92% - 348px);
+    width: calc(92% - 270px);
     margin: 0 0 0 2%;
     padding: 1em 1em 0;
     float: left
@@ -602,7 +602,7 @@ strong {
 #main>article aside.sidebar,
 #main>aside.sidebar {
     position: relative;
-    width: 348px;
+    width: 270px;
     margin: 1%;
     padding: 0em 1em 0;
     float: left;
@@ -791,15 +791,15 @@ strong {
         padding: 1.5em 0 5.5em
     }
     #header .home-group .home-group__content {
-        width: calc(92% - 348px);
+        width: calc(92% - 270px);
         padding: 0 1.5em
     }
     #header .header-group .header-group__content {
-        width: calc(92% - 348px);
+        width: calc(92% - 270px);
         padding: 0 1.5em
     }
     #main>article {
-        width: calc(88% - 348px);
+        width: calc(88% - 270px);
     }
 
 }
