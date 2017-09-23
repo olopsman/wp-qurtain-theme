@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <header id="header" class="js-header">
         <div class="header-group row">
           <!-- social brands
@@ -56,13 +57,6 @@
             -->
             <!-- social brands -->
             <!-- popular post -->
-            <div class="header-group__content">
-
-            <h1 class="header-group__content-title" property="name">Just Another Dang Blog</h1>
-            <p class="header-group__content-description" property="description">
-              Best way to learn is to teach. 
-            </p>
-            </div>
             <div class="header-group__aside show-md" style="margin: 0px; padding: 0px; border-width: 0px;">
               <!--ads by google here -->
               ads here
@@ -80,46 +74,26 @@
           <section class="section-post">
     			<div class="post" id="post-<?php the_ID(); ?>">
     				<div class="post_header">
-
-                <div class="post-date">
-    					  	<span class="post-month"><?php the_time('M') ?></span> <span class="post-day"><?php the_time('d') ?></span>
+                <div class="post_title">
+                  <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
                 </div>
-
-                        <div class="post_title">
-                          <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
-                        </div>
-
             </div>
 
     				<div class="post_content">
     					<p><?php the_content('Read the rest of this entry &raquo;'); ?></p>
 
     				</div>
-
-
-
-    				<p class="postmetadata">Posted in <?php the_category(', ') ?> <strong>|</strong> <?php edit_post_link('Edit','','<strong>|</strong>'); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-
     			</div>
         </section>
     		<?php endwhile; ?>
-
-    		<div class="navigation">
-    			<div class="alignleft"><?php posts_nav_link('','','&laquo; Previous Entries') ?></div>
-    			<div class="alignright"><?php posts_nav_link('','Next Entries &raquo;','') ?></div>
-    		</div>
-
-
     	<?php else : ?>
-
     		<h2 class="center">Not Found</h2>
     		<p class="center"><?php _e("Sorry, but you are looking for something that isn't here."); ?></p>
     		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
-
     	<?php endif; ?>
-
     </article>
-<?php get_sidebar(); ?>
+
+    <?php get_sidebar(); ?>
 </main>
 
 <?php get_footer(); ?>
