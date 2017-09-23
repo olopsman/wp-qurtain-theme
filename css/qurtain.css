@@ -596,7 +596,8 @@ strong {
 #main>article pre {
     padding: 1em 1.5em 1.25em;
     border-radius: 3px;
-    border: 1px solid #eaeaea
+    border: 1px solid #eaeaea;
+    white-space: normal;       /* css-3 */
 }
 #main>article aside.sidebar,
 #main>aside.sidebar {
