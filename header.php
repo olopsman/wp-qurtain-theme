@@ -3,6 +3,11 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<?php wp_head(); ?>
+		<script>
+		   jQuery(document).ready(function(){
+				 jQuery('iframe').wrap("<div class='iframe-flexible-container'></div>");
+		   });
+		</script>
 	</head>
 		<!-- add the body tag - the navigation section is used by all pages -->
 		<body>

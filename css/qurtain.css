@@ -574,6 +574,7 @@ strong {
 
 #main>article {
     position: relative;
+    width: calc(92% - 348px);
     margin: 0 0 0 2%;
     padding: 1em 1em 0;
     float: left
@@ -874,6 +875,21 @@ strong {
   #main>aside.sidebar {
       width: 95%
   }
+  #main>article {
+      width: calc(90% - 25px);
+  }
+
+  #main>article.section-post.post.iframe,
+  #main>article object,
+  #main>article embed {
+      width: calc(90% - 25px);
+      position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+  }
+
+
 
 }
 
@@ -891,4 +907,20 @@ strong {
         width: 90%
     }
 
+}
+
+.iframe-flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+}
+.iframe-flexible-container iframe,
+.iframe-flexible-container object,
+.iframe-flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
 }
