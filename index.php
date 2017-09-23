@@ -58,34 +58,34 @@
             <!-- popular post -->
             <div class="header-group__content">
 
-            <h1 class="header-group__content-title" property="name">Just Another Dang Blog</h1>
+            <h1 class="header-group__content-title" property="name"><?php bloginfo('title'); ?></h1>
             <p class="header-group__content-description" property="description">
-              Best way to learn is to teach. 
+              <?php bloginfo('description'); ?>
             </p>
             </div>
-            <div class="header-group__aside show-md" style="margin: 0px; padding: 0px; border-width: 0px;">
+            <div class="header-group__aside show-md">
               <!--ads by google here -->
               ads here
             </div>
        </div>
   </header>
 
-  <main id="main" class="row animate delay-125 fadeIn" property="mainContentOfPage" typeof="WebPageElement" role="main">
+  <main id="main" class="row animate delay-125 fadeIn">
 
-    <article id="names" class="color-names js-content" vocab="http://schema.org/" typeof="Article">
+    <article id="names" class="color-names js-content">
 
       <?php if (have_posts()) : ?>
 
     		<?php while (have_posts()) : the_post(); ?>
           <section class="section-post">
     			<div class="post" id="post-<?php the_ID(); ?>">
-    				<div class="post_header">
+    				<div class="post-header">
 
                 <div class="post-date">
     					  	<span class="post-month"><?php the_time('M') ?></span> <span class="post-day"><?php the_time('d') ?></span>
                 </div>
 
-                        <div class="post_title">
+                        <div class="post-title">
                           <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
                         </div>
 

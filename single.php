@@ -3,16 +3,16 @@
 <header id="header" class="js-header">
         <div class="header-group row">
             <!-- popular post -->
-            <div class="header-group__aside show-md" style="margin: 0px; padding: 0px; border-width: 0px;">
+            <div class="header-group__aside show-md">
               <!--ads by google here -->
               ads here
             </div>
        </div>
   </header>
 
-  <main id="main" class="row animate delay-125 fadeIn" property="mainContentOfPage" typeof="WebPageElement" role="main">
+  <main id="main" class="row animate delay-125 fadeIn">
 
-    <article id="names" class="color-names js-content" vocab="http://schema.org/" typeof="Article">
+    <article id="names" class="color-names js-content">
 
       <?php if (have_posts()) : ?>
 
@@ -107,7 +107,7 @@
           </a>	</ul>
           </div>
             </footer>
-        -->    
+        -->
     		<?php endwhile; ?>
 
     		<div class="navigation">

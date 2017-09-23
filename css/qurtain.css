@@ -124,6 +124,7 @@ strong {
     right: 0;
     width: 3em;
     height: 3em;
+    padding: 0.5em;
     -webkit-transform: translate3d(0, 0, 0);
     z-index: 4
 }
@@ -322,6 +323,15 @@ strong {
     animation: headerSlide 0.75s, headerFade 1s
 }
 
+#header .header-group .header-group__aside {
+    position: relative;
+    padding: 0 1.5em;
+    width: 348px;
+    max-height: 250px;
+    float: left;
+    z-index: 10;
+}
+
 
 #header figure {
     -webkit-animation: headerSlide 0.75s, headerFade 1s;
@@ -448,7 +458,6 @@ strong {
     margin-bottom: 2.25em;
     padding: 0 0 3em;
     border-radius: 3px;
-    /*background-color: white;*/
     background-image:url('../images/bg-orig-.jpg');
     background-repeat: repeat;
     -webkit-animation: mainSlide 1s, mainFade 1s;
@@ -565,9 +574,8 @@ strong {
 
 #main>article {
     position: relative;
-    width: calc(88% - 348px);
     margin: 0 0 0 2%;
-    padding: 3em 1.5em 0;
+    padding: 1em 1em 0;
     float: left
 }
 #main>article section,
@@ -585,7 +593,6 @@ strong {
 }
 
 #main>article pre {
-    margin: 1.5em -1.5em;
     padding: 1em 1.5em 1.25em;
     border-radius: 3px;
     border: 1px solid #eaeaea
@@ -595,86 +602,25 @@ strong {
     position: relative;
     width: 348px;
     margin: 1%;
-    padding: 3em 1.5em 0;
+    padding: 0em 1em 0;
     float: left;
     background: url('../images/transbg.png');
     background-repeat:repeat;
 
 }
 
-#main>article aside.sidebar div.color-export.fixed,
-#main>aside.sidebar div.color-export.fixed {
-    position: fixed;
-    top: 6.25em
+#main>article aside.sidebar h2,
+#main>aside.sidebar h2 {
+  line-height: 1.414;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
-#main>article aside.sidebar div.color-codes,
-#main>aside.sidebar div.color-codes {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-    border-radius: 3px;
-    border: 1px solid #eaeaea
-}
 
-#main>article aside.sidebar pre,
-#main>aside.sidebar pre {
-    margin: 0;
-    padding: 1em;
-    color: #4c4a4a;
-    -webkit-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-#main>article aside.sidebar pre span,
-#main>aside.sidebar pre span {
-    display: block
-}
-
-#main>article aside.sidebar h6,
-#main>aside.sidebar h6 {
-    margin-top: 0.375em;
-    margin-bottom: 2.25em
-}
-
-#main>article aside.sidebar h6 img,
-#main>aside.sidebar h6 img {
-    display: inline-block;
-    vertical-align: bottom;
-    margin-bottom: 1px
-}
-
-#main>article aside.sidebar h6.lock-icon img:nth-child(1),
-#main>aside.sidebar h6.lock-icon img:nth-child(1) {
-    margin-left: -5px
-}
-
-#main>article aside.sidebar h6.arrow-icon .button-svg,
-#main>aside.sidebar h6.arrow-icon .button-svg {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 3px;
-    margin-right: 0.375em
-}
-
-#main>article aside.sidebar h6.export-icon .button-svg,
-#main>aside.sidebar h6.export-icon .button-svg {
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 3px;
-    margin-right: 0.375em
-}
-
-#main>article aside.sidebar h6.:hover .button-svg .fill,
-#main>aside.sidebar h6.gray:hover .button-svg .fill {
-    fill: #4c4a4a
-}
 #main>article.home aside.sidebar {
     padding: 0 1.5em 0
 }
+/* social sharing buttons */
 .button-group {
     margin: 1.5em 0 0
 }
@@ -753,13 +699,9 @@ strong {
 	display:block;
 	line-height: 18px;
 	padding-top: 3px;
-	margin-left: -0px;
 }
-.post_title {
+.post-title {
 	height:auto;
-	font-family: "Trebuchet MS",Tahoma, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	text-align:left;
 	padding-top:10px;
 	padding-bottom:25px;
 	font-weight:bold;
@@ -767,7 +709,14 @@ strong {
 	margin-left:10px;
 }
 
-/* this media puts the nav on top -*/
+#rightsidebar ul li ul li {
+	margin: 5px 1em;
+	padding-top:0px;
+	list-style:none;
+	list-style-image:url("../images/icon_arrow_sm.gif");
+}
+
+
 @media only screen and (min-width: 48.063em) {
     #nav {
         position: absolute;
@@ -846,6 +795,100 @@ strong {
     #header .header-group .header-group__content {
         width: calc(92% - 348px);
         padding: 0 1.5em
+    }
+    #main>article {
+        width: calc(88% - 348px);
+    }
+
+}
+@media only screen and (max-width: 48em) {
+  html,
+  body {
+      overflow-x: hidden
+  }
+  #nav {
+      position: fixed;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0;
+      background-color: #f7f7f7;
+      backface-visibility: hidden;
+      overflow-x: auto;
+      z-index: 5;
+      -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+      -moz-transition: -moz-transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+      -o-transition: -o-transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+      transition: transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99)
+  }
+  #nav .row {
+    display:none;
+  }
+  #nav ul {
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      -o-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out
+  }
+  #mobile {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      padding: 1em 0;
+      background-image:url('../images/bg.jpg');
+      background-repeat: repeat;
+      background-color: #f7f7f7;
+      backface-visibility: hidden;
+      z-index: 4
+  }
+  #mobile .custom-logo {
+    padding: 0 0.2em;
+  }
+  #mobile,
+  #header,
+  #main,
+  #footer {
+      -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+      -moz-transition: -moz-transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+      -o-transition: -o-transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+      transition: transform 0.25s cubic-bezier(0.16, 0.68, 0.43, 0.99)
+  }
+
+  #header .header-group .header-content {
+      width: 100%;
+      margin: 0
+  }
+  #header .header-group .header-content aside {
+      display: none
+  }
+  #header .home-group .home-content {
+      position: relative;
+      width: 100%;
+      margin: 0
+  }
+  article#names>section {
+      margin: 0
+  }
+  #main>article aside.sidebar,
+  #main>aside.sidebar {
+      width: 95%
+  }
+
+}
+
+@media only screen and (max-width: 40em) {
+    #main>article header,
+    #main>article section {
+        margin-bottom: 3em
+    }
+    #main>article pre {
+        margin: 1.5em 0;
+        padding: 0.5em 0.75em 0.5em
+    }
+    #main>article aside.sidebar,
+    #main>aside.sidebar {
+        width: 90%
     }
 
 }
