@@ -5,7 +5,6 @@
             <!-- popular post -->
             <div class="header-group__aside show-md">
               <!--ads by google here -->
-              ads here
             </div>
        </div>
   </header>
