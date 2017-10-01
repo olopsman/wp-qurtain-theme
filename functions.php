@@ -35,8 +35,6 @@
 				'link',
 			) );
 			add_theme_support( 'custom-logo', array(
-				'height'      => 250,
-				'width'       => 250,
 				'flex-width'  => true,
 				'flex-height' => true,
 			) );
@@ -52,7 +50,7 @@
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
-		//enabe jquery
+		//call the wp jquery
 		wp_enqueue_script( 'jquery');
 
 	}
