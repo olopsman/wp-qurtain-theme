@@ -890,7 +890,66 @@ strong {
     	width: 100%;
   }
 
+  /* Close Button */
+  .close-button {
+  	width: 16px;
+  	height: 16px;
+  	position: absolute;
+  	right: 1em;
+  	top: 1em;
+  	overflow: hidden;
+  	text-indent: 16px;
+  	border: none;
+  	z-index: 1001;
+  	background: transparent;
+  	color: transparent;
+  }
 
+  .close-button::before,
+  .close-button::after {
+  	content: '';
+  	position: absolute;
+  	width: 2px;
+  	height: 100%;
+  	top: 0;
+  	left: 50%;
+  	background: #95a5a6;
+  }
+
+  .close-button::before {
+  	-webkit-transform: rotate(45deg);
+  	transform: rotate(45deg);
+  }
+
+  .close-button::after {
+  	-webkit-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+  }
+
+  /* Menu */
+  .menu-wrap {
+  	position: absolute;
+  	z-index: 1001;
+  	width: 300px;
+  	height: 100%;
+  	font-size: 1.15em;
+  	-webkit-transform: translate3d(1300px,0,0);
+  	transform: translate3d(1300px,0,0);
+  	-webkit-transition: -webkit-transform 0.3s;
+  	transition: transform 0.3s;
+  }
+
+  .menu {
+  	background: #373a47;
+  	height: 100%;
+  	padding: 1em 1em;
+  }
+
+  /* Shown menu */
+  .show-menu .menu-wrap {
+  	-webkit-transform: translate3d(0,0,0);
+  	transform: translate3d(320px,0,0);
+  }
 
 }
 
@@ -909,7 +968,7 @@ strong {
     }
 
 }
-
+/* fix for youtube embedded video responsiveness */
 .iframe-flexible-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -925,3 +984,5 @@ strong {
     width: 100% !important;
     height: 100%;
 }
+
+/****/

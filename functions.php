@@ -50,8 +50,12 @@
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
+
 		//call the wp jquery
 		wp_enqueue_script( 'jquery');
+		wp_enqueue_script('main', get_template_directory_uri() . '/js/classie.js', array(), 1.0,true);
+		wp_enqueue_script('classie', get_template_directory_uri() . '/js/mobile-main.js', array(), 1.0,true);
+
 
 	}
 
