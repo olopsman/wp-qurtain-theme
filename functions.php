@@ -53,8 +53,8 @@
 
 		//call the wp jquery
 		wp_enqueue_script( 'jquery');
-		wp_enqueue_script('main', get_template_directory_uri() . '/js/classie.js', array(), 1.0,true);
-		wp_enqueue_script('classie', get_template_directory_uri() . '/js/mobile-main.js', array(), 1.0,true);
+		//wp_enqueue_script('main', get_template_directory_uri() . '/js/classie.js', array(), 1.0,true);
+		//wp_enqueue_script('classie', get_template_directory_uri() . '/js/mobile-main.js', array(), 1.0,true);
 
 
 	}

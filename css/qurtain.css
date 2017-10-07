@@ -889,68 +889,40 @@ strong {
     	left: 0;
     	width: 100%;
   }
-
-  /* Close Button */
-  .close-button {
-  	width: 16px;
-  	height: 16px;
-  	position: absolute;
-  	right: 1em;
-  	top: 1em;
-  	overflow: hidden;
-  	text-indent: 16px;
-  	border: none;
-  	z-index: 1001;
-  	background: transparent;
-  	color: transparent;
-  }
-
-  .close-button::before,
-  .close-button::after {
-  	content: '';
-  	position: absolute;
-  	width: 2px;
-  	height: 100%;
-  	top: 0;
-  	left: 50%;
-  	background: #95a5a6;
-  }
-
-  .close-button::before {
-  	-webkit-transform: rotate(45deg);
-  	transform: rotate(45deg);
-  }
-
-  .close-button::after {
-  	-webkit-transform: rotate(-45deg);
-  	transform: rotate(-45deg);
-  }
-
-  /* Menu */
+  /* menu navigation */
   .menu-wrap {
-  	position: absolute;
-  	z-index: 1001;
-  	width: 300px;
-  	height: 100%;
-  	font-size: 1.15em;
-  	-webkit-transform: translate3d(1300px,0,0);
-  	transform: translate3d(1300px,0,0);
-  	-webkit-transition: -webkit-transform 0.3s;
-  	transition: transform 0.3s;
-  }
-
-  .menu {
-  	background: #373a47;
-  	height: 100%;
+    overflow:hidden;
+    position:inherit;
+    width:100%;
+    float:right;
+  	height: auto;
   	padding: 1em 1em;
-  }
 
-  /* Shown menu */
-  .show-menu .menu-wrap {
+  }
+  .menu-wrap ul {
+  	overflow:hidden;
+  	height:0;
+    -webkit-transform: translate3d(0,0,0);
+  	transform: translate3d(220px,0,0);
+  	background-color:#505050;
+  }
+  .menu-wrap ul.open{
+  	height:auto;
+  	width:90%;
   	-webkit-transform: translate3d(0,0,0);
   	transform: translate3d(320px,0,0);
+  	background-color:#505050;
   }
 
+  .menu-wrap ul li{
+  	margin:0;
+  	width:100%;
+  	text-align:left;
+  }
+  .menu-wrap ul li a{
+    display:block;
+    padding:10px;
+  }
 }
 
 @media only screen and (max-width: 40em) {
