@@ -10,7 +10,7 @@
 		</script>
 	</head>
 		<!-- add the body tag - the navigation section is used by all pages -->
-		<body>
+		<body <?php body_class(); ?> >
         <nav id="nav">
             <ul class="row">
 							<!--custom logo -->

@@ -34,10 +34,7 @@
     					<p><?php the_content('Read the rest of this entry &raquo;'); ?></p>
 
     				</div>
-
-
-
-    				<p class="postmetadata">Posted in <?php the_category(', ') ?> <strong>|</strong> <?php edit_post_link('Edit','','<strong>|</strong>'); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+    				<p class="postmetadata">Posted in <?php the_category(', ') ?> <strong>|</strong> <?php edit_post_link('Edit','','<strong> | </strong>'); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
 
     			</div>
         </section>
@@ -114,6 +111,12 @@
     			<div class="alignright"><?php posts_nav_link('','Next Entries &raquo;','') ?></div>
     		</div>
 
+        <?php
+        // If comments are open or we have at least one comment, load up the comment template.
+        if ( comments_open() || get_comments_number() ) :
+          comments_template();
+        endif;
+          ?>
 
     	<?php else : ?>
 
