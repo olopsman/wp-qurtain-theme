@@ -97,7 +97,7 @@
 
 
 
-    				<p class="postmetadata">Posted in <?php the_category(', ') ?> <strong>|</strong> <?php edit_post_link('Edit','','<strong>|</strong>'); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+    				<p class="postmetadata">Posted in <?php the_category(', ') ?> <strong> | </strong> <?php edit_post_link('Edit','','<strong> | </strong>'); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
 
     			</div>
         </section>
