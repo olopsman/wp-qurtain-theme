@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <header id="header" class="js-header">
         <div class="header-group row">
-          <!-- social brands 
+          <!-- social brands
             <div class="header-group__social show-md">
               <a id="Twitter" class="gray popup" target="_blank" href="https://twitter.com/share?url=http://htmlcolorcodes.com/color-names/&amp;text=HTML%20Color%20Codes%20%E2%80%94%20the%20best%20color%20tool%20on%20the%20web!%20by%20@dixonandmoe%20%23colorful%20%23useful">	  <svg version="1.1" class="button-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
               <path class="fill" d="M24,4.557c-0.883,0.392-1.832,0.656-2.828,0.775c1.018-0.609,1.799-1.574,2.164-2.724

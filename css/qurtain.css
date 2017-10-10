@@ -1,15 +1,11 @@
 @import "normalize.css";
 
 html {
-    font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     background-image:url('../images/bg-orig-.jpg');
     background-repeat: repeat;
 
-}
-main {
-    display: block
 }
 
 ol,
@@ -20,11 +16,6 @@ li {
     padding: 0
 }
 
-p {
-    font-style: normal;
-    font-weight: 200;
-    letter-spacing: 0.025em;
-}
 
 p a {
     color: #b0b0b0;
@@ -32,18 +23,8 @@ p a {
 }
 
 p a:hover {
-    color: #3f3844;
+    color: #0f93d7;
     border-bottom: 1px solid #3f3844
-}
-
-figcaption {
-    font-style: normal;
-    font-weight: 700;
-    color: #4c4a4a;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 14px;
-    font-size: 0.875rem
 }
 
 a {
@@ -57,15 +38,6 @@ a {
     color: inherit
 }
 
-code {
-    font-family: "Courier", Courier, monospace;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.0375em;
-    line-height: 1.4;
-    font-size: 14px;
-    font-size: 0.875rem
-}
 a,
 img,
 ol,
@@ -75,9 +47,6 @@ button {
     -moz-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.375s cubic-bezier(0.4, 0, 0.2, 1)
-}
-[hidden] {
-    display: none
 }
 
 abbr[title] {
@@ -98,20 +67,10 @@ body {
 }
 
 body {
-	margin: 0
-    background: white;
     color: #FFF;
-    font-family: "Lato", "Helvetica", Helvetica, sans-serif
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
 }
 
-a:focus {
-    outline: thin dotted
-}
-
-a:active,
-a:hover {
-    outline: 0
-}
 
 b,
 strong {
@@ -120,22 +79,12 @@ strong {
 .nav-button {
     position: absolute;
     display: block;
-    top: 0em;
+    top: 1em;
     right: 0;
     width: 3em;
     height: 3em;
     padding: 0.5em;
     -webkit-transform: translate3d(0, 0, 0);
-    z-index: 4
-}
-.nav-button span {
-    position: relative;
-    display: block;
-    width: 1.25em;
-    height: 2px;
-    margin-bottom: 5px;
-    border-radius: 0.1875em;
-    background-color: #3f3844;
     z-index: 4
 }
 
